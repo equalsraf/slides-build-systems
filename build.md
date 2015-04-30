@@ -196,7 +196,7 @@ class: middle, center, inverse
 - Runs on Unix, everyone knows ./configure && make && make install
 - Good C/C++
 - If that is all you need, great
-- (sarcarm) writing configure scripts and m4 is fun
+- (sarcasrm) writing configure scripts and m4 is fun
 
 ---
 
