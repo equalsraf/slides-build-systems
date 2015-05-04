@@ -243,4 +243,16 @@ Because Ant didn't download and manage 300 dependencies automagically. Java is g
 ---
 background-image: url(lemons.jpg)
 
+---
+
+# stuff from the Internet
+
+- [io.js - What about gyp?](https://github.com/iojs/io.js/issues/133)
+- [Imperative vs Declarative build systems](http://stackoverflow.com/questions/14955597/imperative-vs-declarative-build-systems)
+- [CMake sucks, autoconf rules](https://plus.google.com/+LinasVepstas/posts/1FZG3Wx8XTt)
+- [autoconf and portable programs: the joke](http://marc.info/?l=openbsd-ports&m=126805847322995&w=2)
+
+
+
+
 
