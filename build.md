@@ -40,6 +40,8 @@ class: middle, center
 
 cmake, GNU make, BSD make, autoconf, automake, nmake, jom, ant, maven, scons, waf, bjam, ninja, vcbuild, msbuild, gyp, qmake, sh/batch/perl/python/ruby/\* scripts, setuptools -- Gradle, premake, Rake, gn -- Sublime, XCODE, Visual Studio, Eclipse project files
 
+I haven't even listed **NIH** derivatives
+
 
 ---
 
@@ -130,7 +132,7 @@ background-image: url(onering.jpg)
 - Build systems have to know your compiler/tools
 - This means domain specific problems
 - There will always be build systems that are domain specific
-  - no "extra" dependencies
+  - no "extra" dependencies (self contained)
   - feel natural for that domain
 
 
@@ -169,6 +171,17 @@ This is improving as CMake gets used more - used to be a lot worse
 
 ---
 
+# e.g. Vim
+
+- Ships one Makefile for each platform
+
+Make_bc3.mak  Make_cyg_ming.mak  Make_dvc.mak  Make_manx.mak  Make_morph.mak  Make_sas.mak
+Make_bc5.mak  Make_dice.mak      Makefile      Make_ming.mak  Make_mvc.mak    Make_vms.mms
+Make_cyg.mak  Make_djg.mak       Make_ivc.mak  Make_mint.mak  Make_os2.mak    Make_w16.mak
+
+- still needs autoconf for dependency detection (in some platforms)
+---
+
 # e.g. Python (Windows)
 
 Check PCBuild/readme.txt it just makes you cry
@@ -184,7 +197,7 @@ class: middle, center, inverse
 # CMake
 
 - Meta build system, generates Make, Ninja, Codeblocks, Eclipse, KDevelop, Sublime, ...
-- The good parts: It is **portable**
+- The good parts: It is **portable** and has lots of goodies
 - Does other things besides C, C++ - just not so well - remember it is all about support
 - God only knows what can happen afterwards, you defined a custom command target that
   was turned into a Visual Studio project ...
@@ -203,21 +216,21 @@ class: middle, center, inverse
 - Runs on Unix, everyone knows ./configure && make && make install
 - Good C/C++
 - If that is all you need, great
-- (sarcasrm) writing configure scripts and m4 is fun
+- (sarcasm) writing configure scripts and m4 is fun
 
 ---
 
 # Ant
 
-Because Java, and your build system needs to understand your compiler remember
-
-In Android Ant was replaced by Gradle.
+- Because Java, and your build system needs to understand your compiler remember
+- In Android Ant was replaced by Gradle.
 
 ---
 
 # Maven 
 
-Because Ant didn't download and manage 300 dependencies automagically. Java is good at messing up dependencies.
+- Because Ant didn't download and manage 300 dependencies automagically.
+- Java is good at messing up dependencies.
 
 ---
 
@@ -236,7 +249,7 @@ Because Ant didn't download and manage 300 dependencies automagically. Java is g
 - In software we deal with *unreasonable uncertainty* with unit tests and coverage 
 - You can do the same for build systems
 - The really tricky bits happen
-  - When you need to build third-party software that uses other system
+  - When you need to build third-party software that uses other build system
   - Can't assume anything about the systen (a.k.a. Windows)
 
 
