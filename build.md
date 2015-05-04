@@ -191,6 +191,13 @@ class: middle, center, inverse
 
 ---
 
+# this is accurate
+
+> I must admit, it was simpler to write cross platform code then to perform cross platform builds!
+>
+> -- <cite>http://blog.cppcms.com/post/54</cite>
+---
+
 # Autotools (autoconf+automake+make)
 
 - Runs on Unix, everyone knows ./configure && make && make install
